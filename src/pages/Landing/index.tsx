@@ -29,7 +29,7 @@ const Landing: React.FC = () => {
             Estudar
           </a>
 
-          <a href="" className="study">
+          <a href="" className="give-classes">
             <img src={giveClassIcon} alt="Dar aula" />
             Dar aulas
           </a>
