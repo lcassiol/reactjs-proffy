@@ -1,38 +1,61 @@
 import React from "react";
-import "./styles.css";
-import whatsappIcon from "../../assets/images/icons/whatsapp.svg";
 
-const TeacherItem: React.FC = () => {
+import "./styles.css";
+
+import whastappIcon from "../../assets/images/icons/whatsapp.svg";
+import api from "../../services/api";
+
+export interface Teacher {
+  avatar: string;
+  bio: string;
+  cost: number;
+  id: number;
+  name: string;
+  subject: string;
+  whatsapp: number;
+}
+
+interface TeacherItemProps {
+  teacher: Teacher;
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({
+  teacher,
+}: TeacherItemProps) => {
+  function createNewConnection() {
+    api.post("connections", {
+      user_id: teacher.id,
+    });
+  }
+
   return (
     <article className="teacher-item">
       <header>
-        <img
-          src="https://avatars2.githubusercontent.com/u/9991290?s=460&u=6db226f1e1caa2fef63c08e5c88b73a883d45b14&v=4"
-          alt="cassio carvalho"
-        />
+        <img src={teacher.avatar} alt={teacher.name} />
         <div>
-          <strong>Cassio Carvalho</strong>
-          <span>Quimica</span>
+          <strong>{teacher.name}</strong>
+          <span>{teacher.subject}</span>
         </div>
       </header>
-
-      <p>
-        jsaljdsajldjkajd askjdlasjdkajs jsaljdsajldjkajd
-        <br /> <br />
-        jsaljdsajldjkajd askjdlasjdkajs jsaljdsajldjkajd askjdlasjdkajs
-        jsaljdsajldjkajd askjdlasjdkajs jsaljdsajldjkajd askjdlasjdkajs
-        jsaljdsajldjkajd askjdlasjdkajs jsaljdsajldjkajd askjdlasjdkajs
-      </p>
-
+      <p>{teacher.bio}</p>
       <footer>
         <p>
           Preço/hora
-          <strong>R$80,00</strong>
+          <strong>
+            R$
+            {teacher.cost}
+          </strong>
         </p>
-        <button type="button">
-          <img src={whatsappIcon} alt="whatsapp" />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={createNewConnection}
+          href={`https://wa.me/${teacher.whatsapp}`}
+          type="button"
+        >
+          <img src={whastappIcon} alt="Whatsapp" />
           Entrar em contato
-        </button>
+        </a>
       </footer>
     </article>
   );

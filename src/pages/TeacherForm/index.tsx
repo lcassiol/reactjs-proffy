@@ -1,4 +1,4 @@
-import React, { ReactElement, useState, FormEvent } from "react";
+import React, { ReactElement, useState, FormEvent, useCallback } from "react";
 import { useHistory } from "react-router-dom";
 import PageHeader from "../../components/PageHeader";
 import Input from "../../components/Input";
@@ -29,44 +29,44 @@ function TeacherForm(): ReactElement {
     setScheduleItems([...scheduleItems, { week_day: 0, from: "", to: "" }]);
   }
 
-  function handleCreateClass(e: FormEvent) {
-    e.preventDefault();
+  const handleCreateClass = useCallback(
+    async (e: FormEvent) => {
+      e.preventDefault();
+      try {
+        await api.post("classes", {
+          name,
+          avatar,
+          whatsapp,
+          bio,
+          subject,
+          cost: Number(cost),
+          schedule: scheduleItems,
+        });
 
-    api
-      .post("classes", {
-        name,
-        avatar,
-        whatsapp,
-        bio,
-        subject,
-        cost: Number(cost),
-        schedule: scheduleItems,
-      })
-      .then(() => {
         alert("Cadastro realizado com sucesso!");
 
         history.push("/");
-      })
-      .catch(() => {
+      } catch (err) {
         alert("Erro no cadastro.");
-      });
-  }
-
-  function setScheduleItemValue(
-    position: number,
-    field: string,
-    value: string
-  ) {
-    const updateScheduleItems = scheduleItems.map((scheduleItem, index) => {
-      if (index === position) {
-        return { ...scheduleItem, [field]: value };
       }
+    },
+    [avatar, bio, cost, history, name, scheduleItems, subject, whatsapp]
+  );
 
-      return scheduleItem;
-    });
+  const setScheduleItemValue = useCallback(
+    (position: number, field: string, value: string) => {
+      const updateScheduleItems = scheduleItems.map((scheduleItem, index) => {
+        if (index === position) {
+          return { ...scheduleItem, [field]: value };
+        }
 
-    setScheduleItems(updateScheduleItems);
-  }
+        return scheduleItem;
+      });
+
+      setScheduleItems(updateScheduleItems);
+    },
+    [scheduleItems]
+  );
 
   return (
     <div id="page-teacher-form" className="container">
