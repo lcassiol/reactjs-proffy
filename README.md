@@ -70,3 +70,9 @@ $ yarn build
 
 > O código fica salvo em [`build/`](web/build)
 
+
+---
+
+- Backend: https://github.com/lcassiol/nodejs-proffy
+- Mobile: https://github.com/lcassiol/RN-proffy
+
