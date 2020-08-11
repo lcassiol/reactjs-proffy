@@ -28,6 +28,8 @@
 
 </div>
 
+<div align="center">
+  
 ### A versão web da aplicação fei desenvolvida usando a metodologia _mobile first_, em que a aplicação é pensada primeiramente para dispositivos mobile, e depois é adaptada para dispositivos desktops.
 
 > Tecnologias 
@@ -62,3 +64,4 @@ $ yarn build
 ```
 
 > O código fica salvo em [`build/`](web/build)
+</div>
