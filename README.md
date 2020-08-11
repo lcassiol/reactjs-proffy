@@ -38,7 +38,7 @@
 
 <img src="https://github.com/lcassiol/reactjs-proffy/blob/master/src/assets/images/screenshots/proffy-web-home.png?raw=true" width="800" />
 
-<img src="https://github.com/lcassiol/reactjs-proffy/blob/master/src/assets/images/screenshots/proffy-web-result-search.png?raw=true" resize="contain" width="400" height="500" /> <img src="https://github.com/lcassiol/reactjs-proffy/blob/master/src/assets/images/screenshots/proffy-web-form.png?raw=true" width="400" height="500" >
+<img src="https://github.com/lcassiol/reactjs-proffy/blob/master/src/assets/images/screenshots/study.png?raw=true" resize="contain" width="400" height="500" /> <img src="https://github.com/lcassiol/reactjs-proffy/blob/master/src/assets/images/screenshots/cadastro.png?raw=true" width="400" height="500" >
 
 ## :arrow_forward: **Para rodar o projeto**
 
