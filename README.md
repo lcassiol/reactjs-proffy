@@ -24,17 +24,19 @@
 <div align="center">
 
 # :desktop_computer: _**WEB**_
-[![LAYOUT WEB](https://img.shields.io/badge/Layout%20Web-black?style=for-the-badge&logo=figma&logoColor=red)](https://www.figma.com/file/GHGS126t7WYjnPZdRKChJF/Proffy-Web?node-id=27%3A1703)
+[![LAYOUT WEB](https://img.shields.io/badge/Layout%20Web-black?style=for-the-badge&logo=figma&logoColor=red)](https://www.figma.com/file/GHGS126t7WYjnPZdRKChJF/Proffy-Web)
 
 </div>
 
-<div align="center">
+
   
 ### A versão web da aplicação fei desenvolvida usando a metodologia _mobile first_, em que a aplicação é pensada primeiramente para dispositivos mobile, e depois é adaptada para dispositivos desktops.
 
 > Tecnologias 
 - [**React**](https://reactjs.org/) 
 - [**Typescript**](https://www.typescriptlang.org/)
+
+<div align="center">
 
 <img src="https://github.com/lcassiol/reactjs-proffy/blob/master/src/assets/images/screenshots/proffy-web-home.png?raw=true" width="800" />
 
