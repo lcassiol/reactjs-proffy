@@ -21,3 +21,44 @@
 </div>
 
 ---
+<div align="center">
+
+# :desktop_computer: _**WEB**_
+[![LAYOUT WEB](https://img.shields.io/badge/Layout%20Web-black?style=for-the-badge&logo=figma&logoColor=red)](https://www.figma.com/file/GHGS126t7WYjnPZdRKChJF/Proffy-Web?node-id=27%3A1703)
+
+</div>
+
+### A versão web da aplicação fei desenvolvida usando a metodologia _mobile first_, em que a aplicação é pensada primeiramente para dispositivos mobile, e depois é adaptada para dispositivos desktops.
+
+> Tecnologias 
+- [**React**](https://reactjs.org/) 
+- [**Typescript**](https://www.typescriptlang.org/)
+
+<img src="https://github.com/lcassiol/reactjs-proffy/blob/master/src/assets/images/screenshots/proffy-web-home.png?raw=true" width="800" />
+
+<img src="https://github.com/lcassiol/reactjs-proffy/blob/master/src/assets/images/screenshots/proffy-web-result-search.png?raw=true" width="400" height="500" /> <img src="https://github.com/lcassiol/reactjs-proffy/blob/master/src/assets/images/screenshots/proffy-web-form.png?raw=true" width="400" height="500" >
+
+## :arrow_forward: **Para rodar o projeto**
+
+
+```bash
+# Clonar o projeto
+$ git clone https://github.com/lcassiol/reactjs-proffy.git
+
+# Instalar dependências
+$ yarn
+
+# Iniciar servidor de desenvolvimento
+$ yarn start
+```
+
+> O servidor de desenvolvimento fica aberto por padrão em [`http://localhost:3000`](http://localhost:3000)
+> Configurar no arquivo src/services/api.ts a url do backend
+
+Gerar código de produção
+
+```bash
+$ yarn build
+```
+
+> O código fica salvo em [`build/`](web/build)
