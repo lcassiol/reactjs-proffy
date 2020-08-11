@@ -40,6 +40,9 @@
 
 <img src="https://github.com/lcassiol/reactjs-proffy/blob/master/src/assets/images/screenshots/study.png?raw=true" resize="contain" width="400" height="500" /> <img src="https://github.com/lcassiol/reactjs-proffy/blob/master/src/assets/images/screenshots/cadastro.png?raw=true" width="400" height="500" >
 
+</div>
+
+
 ## :arrow_forward: **Para rodar o projeto**
 
 
@@ -54,8 +57,8 @@ $ yarn
 $ yarn start
 ```
 
-> O servidor de desenvolvimento fica aberto por padrão em [`http://localhost:3000`](http://localhost:3000)
-> Configurar no arquivo src/services/api.ts a url do backend
+- O servidor de desenvolvimento fica aberto por padrão em [`http://localhost:3000`](http://localhost:3000)
+- Configurar no arquivo src/services/api.ts a url do backend
 
 Gerar código de produção
 
@@ -64,4 +67,4 @@ $ yarn build
 ```
 
 > O código fica salvo em [`build/`](web/build)
-</div>
+
