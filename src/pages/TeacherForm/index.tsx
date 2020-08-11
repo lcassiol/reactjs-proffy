@@ -133,6 +133,7 @@ function TeacherForm(): ReactElement {
                 { value: "Física", label: "Física" },
                 { value: "Geografia", label: "Geografia" },
                 { value: "Química", label: "Química" },
+                { value: "Informática", label: "Informática" },
                 { value: "História", label: "História" },
                 { value: "Matemática", label: "Matemática" },
                 { value: "Português", label: "Português" },

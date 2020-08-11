@@ -48,6 +48,7 @@ function TeacherList(): ReactElement {
               { value: "Geografia", label: "Geografia" },
               { value: "Química", label: "Química" },
               { value: "História", label: "História" },
+              { value: "Informática", label: "Informática" },
               { value: "Matemática", label: "Matemática" },
               { value: "Português", label: "Português" },
               { value: "Inglês", label: "Inglês" },
