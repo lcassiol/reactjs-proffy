@@ -12,3 +12,12 @@
 # ![Proffy][logo-url]
 
 ### Plataforma de estudos online, onde é possivel conectar alunos com professores.
+[![web][web-badge]](#desktop_computer-web)
+[![backend][backend-badge]](#globe_with_meridians-server)
+[![mobile][mobile-badge]](#iphone-mobile)
+
+![](https://raw.githubusercontent.com/lcassiol/reactjs-proffy/d2520a09b3918bf260cc8f44a731f6be24bf55e3/src/assets/images/landing.svg)
+
+</div>
+
+---
